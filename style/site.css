@@ -1,2 +1,44 @@
+:root{
+
+    --stone100: hsl(30, 18%, 87%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown800: hsl(14, 45%, 36%);
+    --rose50: hsl(330, 100%, 98%);
+    --rose800: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: var(--stone150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: .625rem;
+	max-width: 30rem;
+    width: 30rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+    text-align: left;
+}
+
+img {
+    border-radius: .625rem;
+    width: 27rem;
+}
