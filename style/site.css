@@ -21,18 +21,19 @@
 
 body {
     background-color: var(--stone150);
+    font-family: 'Outfit', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .card {
     background-color: var(--white);
     border-radius: .625rem;
-	max-width: 30rem;
-    width: 30rem;
+	max-width: 32rem;
+    width: 32rem;
 	padding: 1rem;
 	margin-bottom: 1rem;
     text-align: left;
@@ -51,9 +52,13 @@ h2 {
     font-style: normal;
 }
 
+hr {
+    border-top: 1px solid var(--stone100);
+}
+
 img {
     border-radius: .625rem;
-    width: 27rem;
+    width: 30rem;
 }
 
 .ingredients > ul {
@@ -72,8 +77,8 @@ li + li {
 }
 
 p {
-    font-family: 'Outfit', sans-serif;
     font-weight:400;
+    font-size: 16px;
 }
 
 .prep {
@@ -82,4 +87,23 @@ p {
 
 .prep > ul {
     list-style-position: inside;
+}
+
+table {
+    border-collapse: collapse;
+    width: 27rem;
+}
+tr {
+    border-top: 1px solid var(--stone100);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+/* if you want the first row to not have a top border */
+tr:first-child {
+    border: none;
+}
+
+tr td:nth-child(2) {
+    color: var(--rose800)
 }
