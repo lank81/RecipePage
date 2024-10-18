@@ -124,5 +124,5 @@ tr td:nth-child(2) {
 
 ul::marker {
     color:var(--brown800);
-    font-weight: bold;
+    font-weight: 700;
 }
